@@ -1,0 +1,8 @@
+<h1>olá do edit</h1>
+
+<%= simple_form_for @user do |f| %>
+    <%= f.input :username %>
+  <div class="d-grid">
+    <%= f.button :submit, class: 'btn btn-primary' %>
+  </div>
+<% end %>

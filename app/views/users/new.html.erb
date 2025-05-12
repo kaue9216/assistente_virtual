@@ -1,0 +1,9 @@
+<h1>olá mundo</h1>
+
+
+<%= simple_form_for @user do |f| %>
+  <%= f.input :username %>
+  <%= f.submit "Submit", class: "btn btn-primary"%>
+<% end %>
+<hr class="my-4">
+<%= link_to "Back to user", users_path, class: "btn btn-main" %>

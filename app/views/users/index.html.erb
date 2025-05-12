@@ -1,0 +1,10 @@
+<% @users.each do |user| %>
+    <%= user.username %>
+    <p>
+      <%= link_to "Show this user", user %>
+    </p>
+  <% end %>
+
+  <p>
+    <%= link_to "Add user", new_user_path %>
+  </p>
