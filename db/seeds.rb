@@ -9,15 +9,15 @@
 #   end
 User.destroy_all
 
-user1 = User.create!(
+User.create!(
   username: "kaue",
   folowers: 1000,
   likes: 1000,
   obj: "engajamento"
 )
 
-user2 = User.create!(
-  username: "kaue1",
+User.create!(
+  username: "joao",
   folowers: 1000,
   likes: 1000,
   obj: "engajamento"

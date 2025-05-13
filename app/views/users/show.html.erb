@@ -1,5 +1,13 @@
 <%= link_to "Back to all users", users_path %>
 
-<h1><%= @user.username %></h1>
+<h1>Username: <%= @user.username %></h1>
+<h2>Seguidores: <%= @user.folowers %></h2>
+<h2>Média de likes: <%= @user.likes %></h2>
+<h2>Objetivo: <%= @user.obj %></h2>
 <%= button_to "Remove", user_path, method: :delete, class: "btn btn-danger btn-sm" %>
 <%= link_to "Edit", edit_user_path(@user) %>
+
+<p>
+  <h2>Resposta GPT:</h2>
+  <%= @user.content %>
+</p>
